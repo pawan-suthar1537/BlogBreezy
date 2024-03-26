@@ -21,7 +21,7 @@ app.use('/uploads',express.static(__dirname + '/uploads'));
 
 mongoose.connect(process.env.MONGO_URL);
 app.get('/',async(req,res)=>{
-  res.send("Server Build");
+  res.send("Hello from umesh blog server on render");
 });
 
 app.post('/register',async (req,res)=>{
